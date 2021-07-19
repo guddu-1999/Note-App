@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navbar">
+          <div class="nav-left">
+            <h1>Note App</h1>
+            <ul>
+              <li class="nav-item">
+                <a href="/">Home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <input type="text" placeholder="Search" id="searchTxt" />
+            <button id="searchBtn">Search</button>
+          </div>
+        </div>
+        <div class="ham" id="ham" ><i class="fas fa-bars"></i></div>
+      </header>
+      <main>
+          <h1 class=>Welcome to Note App</h1>
+          <form>
+            <div class="card">
+                <input type="text" id="addTitle" placeholder="Add Title" />
+                <input type="text" id="addText" placeholder="Enter Your Notes" style="margin-top: 1rem;" />
+                <button id="addBtn" type="submit" ><i class="fas fa-plus"></i></button>
+            </div>
+            <hr>
+            <h1 style="margin-top: 2rem;">Your Notes</h1>
+            <div class="cards" id="cards">
+            </div>
+          </form>
+      </main>
+      <footer>&copy; Copyright by Harsh Upadhyay</footer>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
